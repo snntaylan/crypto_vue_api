@@ -1,15 +1,9 @@
+import Vue from "vue";
+import App from "./App.vue";
+
+import "./assets/styles/main.css";
+
 new Vue({
-  el: "#vue-app",
-  data: {
-    name: "",
-    age: ""
-  },
-  methods: {
-    logName: function() {
-      console.log("write your name");
-    },
-    logAge: function() {
-      console.log("write your age");
-    }
-  }
+  el: "#app",
+  render: h => h(App)
 });
